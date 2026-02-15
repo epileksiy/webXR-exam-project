@@ -14,14 +14,16 @@ const store = createXRStore({
   hand: { rayPointer: { rayModel: { color: 'red' } } },
 })
 
+const base = import.meta.env.BASE_URL //корректива при деплое на gh pages
+
 // библиотека моделей, которые можно спавнить, гружу все сразу так как типы предопределены
 
 const MODEL_LIBRARY: Array<Omit<ObjDef, 'id' | 'position'>> = [
-  { kind: 'board',   url: '/assets/cigarette/scene.gltf',        scale: 1 },
-  { kind: 'cabinet', url: '/assets/lowpoly_cabinets/scene.gltf', scale: 1 },
-  { kind: 'malboro', url: '/assets/lowpoly_road_barrier/scene.gltf', scale: 6 },
-  { kind: 'shark',   url: '/assets/lowpoly_shark/scene.gltf',    scale: 0.7 },
-  { kind: 'grave',   url: '/assets/speaker/scene.gltf',          scale: 0.5 },
+  { kind: 'board',   url: `${base}/assets/cigarette/scene.gltf`,        scale: 1 },
+  { kind: 'cabinet', url: `${base}/assets/lowpoly_cabinets/scene.gltf`, scale: 1 },
+  { kind: 'malboro', url: `${base}/assets/lowpoly_road_barrier/scene.gltf`, scale: 6 },
+  { kind: 'shark',   url: `${base}/assets/lowpoly_shark/scene.gltf`,    scale: 0.7 },
+  { kind: 'grave',   url: `${base}/assets/speaker/scene.gltf`,          scale: 0.5 },
 ]
 
 export default function App() {

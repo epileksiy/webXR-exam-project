@@ -2,6 +2,7 @@ import { useGLTF, useTexture } from '@react-three/drei'
 import { useMemo, useEffect } from 'react'
 import * as THREE from 'three'
 
+const base = import.meta.env.BASE_URL //корректива при деплое на gh pages
 
 export type ObjKind = 'board' | 'cabinet' | 'malboro' | 'shark' | 'grave'
 
@@ -151,11 +152,11 @@ export function GalleryObjects({
   setInteractable: (id: string, obj: THREE.Object3D | null) => void
 }) {
 
-  const grassMap = useTexture('/assets/grassTex.jpg')  //решил добавить для красоты пол с текстурой как в Garrys Mod
+  const grassMap = useTexture(`${base}/assets/grassTex.jpg`)  //решил добавить для красоты пол с текстурой как в Garrys Mod
   grassMap.wrapS = grassMap.wrapT = THREE.RepeatWrapping
   grassMap.repeat.set(30, 30)
 
-  const grassMapNormal = useTexture('/assets/grassTexNormal.png')
+  const grassMapNormal = useTexture(`${base}/assets/grassTexNormal.png`)
   grassMapNormal.wrapS = grassMapNormal.wrapT = THREE.RepeatWrapping
   grassMapNormal.repeat.set(30, 30)
 
