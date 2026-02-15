@@ -1,0 +1,11 @@
+Model Information:
+* title:	Lowpoly Shark
+* source:	https://sketchfab.com/3d-models/lowpoly-shark-4bb3d40701a14dd6a299b44026f71299
+* author:	AspectStudios (https://sketchfab.com/AspectStudio)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Lowpoly Shark" (https://sketchfab.com/3d-models/lowpoly-shark-4bb3d40701a14dd6a299b44026f71299) by AspectStudios (https://sketchfab.com/AspectStudio) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
